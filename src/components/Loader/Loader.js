@@ -1,11 +1,16 @@
-
 import { MutatingDots } from 'react-loader-spinner';
 //--------------------------------------------------------//
 export const Loader = () => {
   return (
     <div>
-      <MutatingDots color="#00BFFF" height={80} width={80} />
+      <MutatingDots
+        wrapperStyle={{
+          dispay: 'flex',
+          justifyContent: 'center',
+          marginTop: 200,
+          color: '#00BFFF',
+        }}
+      />
     </div>
-    
   );
 };
